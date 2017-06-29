@@ -1,10 +1,9 @@
 # Iren456.github.io
-<pre><code>&lt; script type="text/javascript" 
-src="https://www.google.com/jsapi"&gt;&lt;/script&gt;</code></pre>
-
-<pre><code>google.load("visualization", "1.1", 
-{packages:["wordtree"]});
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+ <script type="text/javascript">
+ google.load("visualization", "1.1", {packages:["wordtree"]});
  google.setOnLoadCallback(drawChart);
+
  function drawChart() {
  var data = google.visualization.arrayToDataTable(
  [ ['Фразы'],
@@ -15,8 +14,8 @@ src="https://www.google.com/jsapi"&gt;&lt;/script&gt;</code></pre>
  ['кот любит спать днем'],
  ['кот любит прыгать'],
  ['кот любит есть колбасу'],
- ['кот любит есть конфеты'],
- ['кот любит есть мышей'],
+['кот любит есть конфеты'],
+['кот любит есть мышей'],
  ['кот любит лазить в окно'],
  ['кот любит лазить в шкаф'],
  ['кот любит лазить на дерево'],
@@ -31,15 +30,19 @@ src="https://www.google.com/jsapi"&gt;&lt;/script&gt;</code></pre>
  ['кот гуляет ночью один'],
  ]
  );
+
  var options = {
 maxFontSize: 14,
+ backgroundColor: '#F7F7F7',
  wordtree: {
  format: 'implicit',
  word: 'кот'
  }
  };
- var chart = new google.visualization.WordTree
-(document.getElementById('wordtree_basic'));
+
+
+ var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
  chart.draw(data, options);
- }</code></pre>
- 
+ }
+ </script>
+<div id="wordtree_basic" style="margin-bottom:10px;"></div>
