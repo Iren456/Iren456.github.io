@@ -1,7 +1,7 @@
 # Iren456.github.io
-< script type="text/javascript" 
-src="https://www.google.com/jsapi"></script>
-google.load("visualization", "1.1", 
+<pre><code>&lt; script type="text/javascript" 
+src="https://www.google.com/jsapi"&gt;&lt;/script&gt;</code></pre>
+<pre><code>google.load("visualization", "1.1", 
 {packages:["wordtree"]});
  google.setOnLoadCallback(drawChart);
  function drawChart() {
@@ -40,6 +40,5 @@ maxFontSize: 14,
  var chart = new google.visualization.WordTree
 (document.getElementById('wordtree_basic'));
  chart.draw(data, options);
- }
-<div id="wordtree_basic" style="width: 100%; 
-height: 500px;"></div>
+ }</code></pre>
+ 
