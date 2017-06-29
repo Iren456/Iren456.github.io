@@ -41,3 +41,5 @@ maxFontSize: 14,
 (document.getElementById('wordtree_basic'));
  chart.draw(data, options);
  }
+<div id="wordtree_basic" style="width: 100%; 
+height: 500px;"></div>
